@@ -112,10 +112,11 @@ public class StudentRegistrationForm {
 //        WebElement hobbyReading = driver.findElement(By.id("hobbies-checkbox-2"));
 //        hobbyReading.click();
 
-        WebElement hobbyMusic = driver.findElement(By.id("hobbies-checkbox-3"));
-        if(!hobbyMusic.isSelected()){
-            hobbyMusic.click();
-        }
+        WebElement hobbyMusic = driver.findElement(By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[3]/label"));
+        hobbyMusic.click();
+//        if(!hobbyMusic.isSelected()){
+//            hobbyMusic.click();
+//        }
 
         //Select musicSelect = new Select(hobbyMusic);
         //musicSelect.selectByValue("3");
@@ -133,10 +134,8 @@ public class StudentRegistrationForm {
 
         //select state and city
 
-        WebElement submit = driver.findElement(By.id("submit"));
-        submit.click();
-
-
+//        WebElement submit = driver.findElement(By.id("submit"));
+//        submit.click();
 
 
 
